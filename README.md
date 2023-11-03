@@ -18,7 +18,6 @@
     modelo para traer o guardar información en la DB. <br>Se utilizó <b>MySQL</b> para la DB. <br><br>
     El testeo de la API se dio mediante la ruta local que nos "sirve" Laravel, <b>http://127.0.0.1:8000</b> y se usó Postman para enviar y recibir solicitudes. <br><br>
     A su vez, se trabajó con <a href = "https://www.laravelia.com/post/laravel-10-jwt-complete-api-authentication-tutorial" target = '_blank'><b>Laravel 10 JWT</b></a>, uno de los sistemas más potentes para <b>autenticación de APIs</b> con Laravel. De esta forma, trabajar con la API requiere un usuario, algo que resulta crucial a la hora de acceder a información que no queremos que sea accedible por cualquiera, necesitando un Token para consultar cada endpoint, el cual se obtiene al loguearse, para lo cual primero hay que registrarse. En este caso cualquiera puede registrarse y acceder, pero naturalmente esos usuarios saldrían de una base de datos. De esta forma, hay varias rutas adicionales, que son las que nos permiten hacer <i>logout</i> y cerrar la sesión, o hacer <i>refresh</i> y modificar nuestro token.<br><br>
-En conclusión acerca de la arquitectura, si bien no se desarrolló con Go, Docker o servicios de Cloud, se buscó que el sistema sea lo más robusto posible, y se puede asegurar que es completamente adaptable a esas tecnologías.
 </div>
 
 ## Ejecución
