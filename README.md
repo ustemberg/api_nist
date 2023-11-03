@@ -1,14 +1,13 @@
 <h1 align="center">
-  <p align="center">API REST: NIST - Mercado Libre</p>
+  <p align="center">API REST: NIST</p>
 </h1>
  <div align="center">
      <img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/NIST_logo.svg/1280px-NIST_logo.svg.png" alt = 'nist' style = 'width:18%;'>&nbsp;&nbsp;&nbsp;
-     <img src = "https://logodownload.org/wp-content/uploads/2018/10/mercado-libre-logo.png" alt = 'meli' style = 'width:20%;'>
  </div><br><br>
 
 ## Introducción
 <div class = "container">
-    Documentación de la API REST cuya información es extraida del <b>NIST</b> (National Institute of Standards and Technology), simulando un posible feature, útil para gestionar las vulnerabilidades existentes que pueden atentar en la seguridad de los diferentes sistemas de <b>Mercado Libre</b>.
+    Documentación de la API REST cuya información es extraida del <b>NIST</b> (National Institute of Standards and Technology), simulando un posible feature, útil para gestionar las vulnerabilidades existentes que pueden atentar en la seguridad de los diferentes sistemas de una compañía.
 </div>
 
 ## Arquitectura
