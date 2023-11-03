@@ -77,9 +77,9 @@ Route::controller(AuthController::class)->group(function () {
 ```
 Partiendo de la ruta base mencionada anteriormente se debe comenzar con el <i>/register</i> (la ruta completa sería <b>http://127.0.0.1:8000/api/register</b>).  Hay que realizar la petición <b>post</b> con los parámetros (que van en Body, en Postman) 'name', 'email' y 'password'. Una vez creada la cuenta, loguearse en el endpoint de <i>/login</i> con los parámetros 'email' y 'password'. <br><br>
 <i>login</i> en Postman:<br><br>
-![image](https://github.com/ustemberg/api_nist/assets/103837698/f5aad2bb-3c43-42c1-b486-699c7ca9c8c6)
+![image](https://github.com/ustemberg/api_nist_meli/assets/103837698/f5aad2bb-3c43-42c1-b486-699c7ca9c8c6)
 <br> Si el usuario se ingreso correctamente, eso brindará un token en el JSON de respuesta: <br><br> 
-![image](https://github.com/ustemberg/api_nist/assets/103837698/a9611c9b-40cb-4beb-8bde-b5fa9509fa55)
+![image](https://github.com/ustemberg/api_nist_meli/assets/103837698/a9611c9b-40cb-4beb-8bde-b5fa9509fa55)
 <br> Es obligación copiarlo, y pegarlo en el parámetro <b>Token</b> en la parte de Authorization de Postman. Con ese Token se podrá efectivamente, ya logueado, utilizar la API. <br>Se puede hacer la prueba de acceder sin login o sin token válido a los endpoints que aparecen a continuación, pero la respuestá sera un <b>No autorizado</b>. Todo el código asociado a los endpoints de autenticación se encuentra en el controlador <b>AuthController</b> en <i>app/Http/Controllers</i><br><br>
 Mientras que las demás rutas son efectivamente los endpoints solicitados para la API REST. Las primeras 4 representan las solicitadas en la consigna, todas de tipo GET (en este caso, no necesitan ningún parámetro) y la última, es la ruta a utilizar para guardar vulnerabilidades corregidas, por eso es de tipo POST:
 ```php
@@ -112,4 +112,4 @@ Por lo tanto, se puede ver en esta y en el resto de funciones para los endpoints
 - **http://127.0.0.1:8000/api/fix**<br>
   Es el endpoint que <b>almacena las vulnerabilidades corregidas</b>. Para marcar vulnerabilidades como corregidas, es necesario cambiar el método a POST, si se venían probando los otros métodos, y en la parte del Body, pasar un único parámetro, que en el código de la función en el controlador se aclara que su nombre es 'cveIDs', el cual recibe separados por coma, sin espacios, los IDs de todas las vulnerabilidades que se quieran poner como corregidas. Si se envía correctamente el parámetro con el o los IDs a marcar como vulnerabilidades corregidas, se mostrará un mensaje de éxito.<br>
 Ejemplo de uso: <br><br>
-![image](https://github.com/ustemberg/api_nist/assets/103837698/09a93df6-86d9-4371-88c5-db65dafa9925)
+![image](https://github.com/ustemberg/api_nist_meli/assets/103837698/09a93df6-86d9-4371-88c5-db65dafa9925)
